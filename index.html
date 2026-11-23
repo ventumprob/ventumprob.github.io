@@ -1,0 +1,1704 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日大赛免费在线 - 官方视频门户_每日大赛免费在线品牌_赛事影像内容平台</title>
+<meta name="description" content="每日大赛免费在线官方网站，专注赛事影像与创作者内容生态，提供高清正版比赛视频、赛事攻略与社区互动，持续运营的赛事视频品牌平台。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1b2d'/%3E%3Cpath d='M20 18h24v8H36v20h-8V26h-8z' fill='%23ffd166'/%3E%3C/svg%3E">
+<style>
+:root{
+  --dk-navy:#0f1b2d;
+  --dk-navy-2:#16263d;
+  --dk-navy-3:#1e3350;
+  --dk-amber:#ffd166;
+  --dk-amber-deep:#f4b942;
+  --dk-ice:#e8eef7;
+  --dk-mist:#9fb2ca;
+  --dk-line:rgba(159,178,202,.22);
+  --dk-card:#152540;
+  --dk-red:#ef6461;
+  --dk-green:#4cc9a0;
+  --dk-radius:16px;
+  --dk-shadow:0 18px 44px rgba(6,14,26,.45);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:132px}
+body{
+  margin:0;
+  background:var(--dk-navy);
+  color:var(--dk-ice);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+h1,h2,h3,h4{margin:0;line-height:1.3}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+.dkm-wrap{width:min(1200px,92%);margin:0 auto}
+.dkm-sticky{position:sticky;top:0;z-index:80}
+
+/* ===== 公告条 ===== */
+.dkm-notice{
+  background:linear-gradient(90deg,var(--dk-amber-deep),var(--dk-amber));
+  color:#1a1206;
+  font-size:13.5px;
+  font-weight:600;
+}
+.dkm-notice-inner{
+  display:flex;align-items:center;gap:12px;
+  padding:8px 0;flex-wrap:wrap;
+}
+.dkm-notice-tag{
+  background:#1a1206;color:var(--dk-amber);
+  border-radius:999px;padding:1px 10px;font-size:12px;letter-spacing:.5px;flex:none;
+}
+.dkm-notice-scroll{
+  overflow:hidden;flex:1 1 260px;min-width:0;
+}
+.dkm-notice-track{
+  display:flex;gap:38px;white-space:nowrap;
+  animation:dkmMarquee 30s linear infinite;
+}
+.dkm-notice-track:hover{animation-play-state:paused}
+@keyframes dkmMarquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.dkm-notice-link{
+  border-bottom:1px dashed rgba(26,18,6,.5);flex:none;
+}
+
+/* ===== 页头 ===== */
+.dkm-header{
+  background:rgba(13,23,38,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--dk-line);
+}
+.dkm-header-inner{
+  display:flex;align-items:center;gap:22px;
+  padding:12px 0;
+}
+.dkm-brand{display:flex;align-items:center;gap:11px;flex:none}
+.dkm-brand-mark{
+  width:42px;height:42px;border-radius:12px;
+  background:linear-gradient(140deg,var(--dk-amber),#ff9f1c);
+  display:grid;place-items:center;color:#151006;font-weight:900;font-size:19px;
+  box-shadow:0 6px 18px rgba(255,209,102,.28);
+}
+.dkm-brand-txt{display:flex;flex-direction:column;line-height:1.15}
+.dkm-brand-txt strong{font-size:17px;letter-spacing:.4px}
+.dkm-brand-txt span{font-size:11px;color:var(--dk-mist);letter-spacing:1.6px}
+.dkm-nav{display:flex;gap:4px;margin-left:8px;flex-wrap:wrap}
+.dkm-nav a{
+  font-size:14.5px;color:var(--dk-mist);padding:7px 12px;border-radius:9px;
+  transition:.22s;
+}
+.dkm-nav a:hover{color:var(--dk-amber);background:rgba(255,209,102,.09)}
+.dkm-head-tools{display:flex;align-items:center;gap:10px;margin-left:auto}
+.dkm-search{
+  display:flex;align-items:center;background:var(--dk-navy-2);
+  border:1px solid var(--dk-line);border-radius:999px;padding:5px 6px 5px 14px;
+  transition:.22s;min-width:210px;
+}
+.dkm-search:focus-within{border-color:var(--dk-amber);box-shadow:0 0 0 3px rgba(255,209,102,.13)}
+.dkm-search input{
+  background:transparent;border:0;outline:0;color:var(--dk-ice);
+  font-size:13.5px;width:130px;
+}
+.dkm-search input::placeholder{color:#7387a1}
+.dkm-search button{
+  border:0;background:var(--dk-amber);color:#1a1206;font-weight:700;
+  border-radius:999px;padding:5px 13px;font-size:12.5px;
+}
+.dkm-search-hint{
+  font-size:12.5px;color:var(--dk-amber);min-height:0;
+  max-width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+.dkm-burger{
+  display:none;border:1px solid var(--dk-line);background:var(--dk-navy-2);
+  color:var(--dk-ice);border-radius:10px;width:42px;height:40px;font-size:19px;
+}
+.dkm-mobile-nav{display:none;border-top:1px solid var(--dk-line);background:var(--dk-navy-2)}
+.dkm-mobile-nav.dkm-open{display:block}
+.dkm-mobile-nav a{display:block;padding:12px 4%;font-size:15px;color:var(--dk-ice);border-bottom:1px solid var(--dk-line)}
+.dkm-mobile-nav a:last-child{border-bottom:0}
+
+/* ===== 通用标题 ===== */
+.dkm-sec{padding:64px 0}
+.dkm-sec-alt{background:var(--dk-navy-2)}
+.dkm-sec-head{margin-bottom:32px;max-width:760px}
+.dkm-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;letter-spacing:2.4px;color:var(--dk-amber);
+  text-transform:uppercase;font-weight:700;margin-bottom:12px;
+}
+.dkm-eyebrow::before{content:"";width:26px;height:2px;background:var(--dk-amber)}
+.dkm-h2{font-size:clamp(23px,3.1vw,33px);letter-spacing:.5px}
+.dkm-sec-head p{color:var(--dk-mist);margin-top:12px;font-size:15px}
+.dkm-h3{font-size:17.5px;letter-spacing:.3px}
+
+/* ===== 首屏：全幅主视觉背景与浮动文字 ===== */
+.dkm-hero{
+  position:relative;overflow:hidden;
+  background:radial-gradient(1100px 520px at 78% -10%,rgba(255,209,102,.16),transparent 62%),linear-gradient(160deg,#101d31,#0b1524 68%);
+  border-bottom:1px solid var(--dk-line);
+}
+.dkm-hero-art{
+  position:absolute;inset:0;z-index:0;opacity:.9;
+}
+.dkm-hero-art svg{width:100%;height:100%}
+.dkm-hero-shade{
+  position:absolute;inset:0;
+  background:linear-gradient(92deg,rgba(11,20,34,.96) 0%,rgba(11,20,34,.86) 40%,rgba(11,20,34,.42) 68%,rgba(11,20,34,.72) 100%);
+  z-index:1;
+}
+.dkm-hero-inner{position:relative;z-index:2;padding:76px 0 66px}
+.dkm-hero-copy{max-width:660px}
+.dkm-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;
+  border:1px solid rgba(255,209,102,.5);color:var(--dk-amber);
+  border-radius:999px;padding:4px 14px;letter-spacing:1.4px;margin-bottom:20px;
+  background:rgba(255,209,102,.08);
+}
+.dkm-hero h1{
+  font-size:clamp(32px,5.4vw,60px);font-weight:900;letter-spacing:1px;
+  background:linear-gradient(100deg,#ffffff 20%,var(--dk-amber) 92%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  margin-bottom:16px;
+}
+.dkm-hero-lead{
+  font-size:16.5px;color:#cbd8e8;max-width:600px;margin-bottom:16px;
+}
+.dkm-hero-intro{
+  font-size:14.5px;color:var(--dk-mist);line-height:1.9;
+  border-left:3px solid var(--dk-amber-deep);padding-left:16px;margin-bottom:26px;
+}
+.dkm-hero-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:28px;max-width:560px;
+}
+.dkm-stat{
+  background:rgba(21,37,64,.72);border:1px solid var(--dk-line);
+  border-radius:14px;padding:14px 16px;
+}
+.dkm-stat b{display:block;font-size:23px;color:var(--dk-amber);letter-spacing:.5px;line-height:1.2}
+.dkm-stat span{font-size:12.5px;color:var(--dk-mist)}
+.dkm-hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.dkm-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  border-radius:999px;padding:12px 24px;font-size:14.5px;font-weight:700;
+  border:1px solid transparent;transition:.22s;
+}
+.dkm-btn-main{background:var(--dk-amber);color:#1a1206;box-shadow:0 10px 26px rgba(255,209,102,.25)}
+.dkm-btn-main:hover{transform:translateY(-2px);background:#ffe08f}
+.dkm-btn-ghost{border-color:var(--dk-line);color:var(--dk-ice);background:rgba(255,255,255,.04)}
+.dkm-btn-ghost:hover{border-color:var(--dk-amber);color:var(--dk-amber);transform:translateY(-2px)}
+.dkm-hero-side{
+  position:relative;z-index:2;max-width:600px;margin-top:34px;
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;
+}
+.dkm-hero-note{
+  background:rgba(13,23,38,.74);border:1px solid var(--dk-line);
+  border-radius:12px;padding:13px 16px;font-size:13px;color:var(--dk-mist);
+}
+.dkm-hero-note strong{color:var(--dk-ice);display:block;font-size:14px;margin-bottom:2px}
+
+/* ===== 数据滚动条 ===== */
+.dkm-ticker{
+  background:var(--dk-navy-3);border-top:1px solid var(--dk-line);border-bottom:1px solid var(--dk-line);
+  overflow:hidden;padding:11px 0;
+}
+.dkm-ticker-track{display:flex;gap:44px;white-space:nowrap;animation:dkmMarquee 38s linear infinite;font-size:13.5px;color:#c7d5e6}
+.dkm-ticker-track span b{color:var(--dk-amber)}
+
+/* ===== 焦点 + 视频列表 ===== */
+.dkm-focus-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:26px;align-items:start}
+.dkm-feature{
+  background:var(--dk-card);border:1px solid var(--dk-line);border-radius:var(--dk-radius);
+  overflow:hidden;box-shadow:var(--dk-shadow);transition:.25s;
+}
+.dkm-feature:hover{transform:translateY(-4px);border-color:rgba(255,209,102,.45)}
+.dkm-feature-media{position:relative;aspect-ratio:16/9;overflow:hidden}
+.dkm-feature-media svg{width:100%;height:100%}
+.dkm-play{
+  position:absolute;inset:0;display:grid;place-items:center;background:rgba(8,14,24,.28);
+  transition:.25s;
+}
+.dkm-feature:hover .dkm-play{background:rgba(8,14,24,.1)}
+.dkm-play i{
+  width:64px;height:64px;border-radius:50%;background:rgba(255,209,102,.94);
+  display:grid;place-items:center;color:#1a1206;font-size:22px;font-style:normal;
+  box-shadow:0 10px 26px rgba(0,0,0,.4);
+}
+.dkm-feature-body{padding:22px}
+.dkm-tagrow{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px}
+.dkm-tag{
+  font-size:11.5px;padding:2px 9px;border-radius:999px;
+  background:rgba(255,209,102,.12);color:var(--dk-amber);border:1px solid rgba(255,209,102,.24);
+}
+.dkm-feature-body h3{font-size:20px;margin-bottom:9px}
+.dkm-feature-body p{font-size:14px;color:var(--dk-mist)}
+.dkm-meta{
+  display:flex;flex-wrap:wrap;gap:14px;align-items:center;
+  margin-top:15px;font-size:12.5px;color:#8195ae;
+}
+.dkm-meta b{color:#c9d7e7;font-weight:600}
+.dkm-focus-list{display:flex;flex-direction:column;gap:12px}
+.dkm-mini{
+  display:flex;gap:14px;align-items:flex-start;
+  background:rgba(21,37,64,.6);border:1px solid var(--dk-line);
+  border-radius:13px;padding:14px;transition:.22s;
+}
+.dkm-mini:hover{background:rgba(30,51,80,.85);border-color:rgba(255,209,102,.4);transform:translateX(3px)}
+.dkm-mini-num{
+  flex:none;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;
+  background:rgba(255,209,102,.14);color:var(--dk-amber);font-weight:800;font-size:14px;
+}
+.dkm-mini h4{font-size:15px;margin-bottom:4px}
+.dkm-mini p{font-size:12.5px;color:var(--dk-mist);line-height:1.65}
+.dkm-mini small{display:block;font-size:11.5px;color:#7b8ea6;margin-top:6px}
+
+/* ===== 视频卡片三列 ===== */
+.dkm-videos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.dkm-vcard{
+  background:var(--dk-card);border:1px solid var(--dk-line);border-radius:var(--dk-radius);
+  overflow:hidden;display:flex;flex-direction:column;transition:.25s;
+}
+.dkm-vcard:hover{transform:translateY(-5px);border-color:rgba(255,209,102,.42);box-shadow:var(--dk-shadow)}
+.dkm-vthumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--dk-navy-3)}
+.dkm-vthumb svg{width:100%;height:100%}
+.dkm-vdur{
+  position:absolute;right:9px;bottom:9px;background:rgba(8,14,24,.84);
+  color:#e8eef7;font-size:11.5px;padding:1px 7px;border-radius:5px;
+}
+.dkm-vbody{padding:16px;display:flex;flex-direction:column;gap:9px;flex:1}
+.dkm-vbody h3{font-size:15.5px}
+.dkm-vbody p{font-size:13px;color:var(--dk-mist);line-height:1.7;flex:1}
+.dkm-vfoot{
+  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  border-top:1px solid var(--dk-line);padding-top:11px;font-size:12px;color:#8195ae;
+}
+.dkm-icon-actions{display:flex;gap:6px}
+.dkm-icon-btn{
+  border:1px solid var(--dk-line);background:transparent;color:#93a7bf;
+  border-radius:8px;padding:3px 9px;font-size:12px;transition:.2s;
+}
+.dkm-icon-btn:hover{border-color:var(--dk-amber);color:var(--dk-amber)}
+.dkm-icon-btn.dkm-liked{background:rgba(255,209,102,.15);border-color:var(--dk-amber);color:var(--dk-amber)}
+.dkm-icon-btn.dkm-saved{background:rgba(76,201,160,.14);border-color:var(--dk-green);color:var(--dk-green)}
+
+/* ===== 专题 ===== */
+.dkm-topics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.dkm-topic{
+  background:linear-gradient(155deg,var(--dk-navy-3),var(--dk-card) 70%);
+  border:1px solid var(--dk-line);border-radius:var(--dk-radius);padding:22px;
+  display:flex;flex-direction:column;gap:14px;transition:.25s;
+}
+.dkm-topic:hover{border-color:rgba(255,209,102,.45);transform:translateY(-3px)}
+.dkm-topic-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.dkm-topic h3{font-size:17px}
+.dkm-status{
+  flex:none;font-size:11.5px;border-radius:999px;padding:2px 10px;
+  border:1px solid rgba(76,201,160,.45);color:var(--dk-green);background:rgba(76,201,160,.1);white-space:nowrap;
+}
+.dkm-status.dkm-soon{border-color:rgba(239,100,97,.5);color:var(--dk-red);background:rgba(239,100,97,.1)}
+.dkm-topic > p{font-size:13.5px;color:var(--dk-mist)}
+.dkm-topic-list{display:flex;flex-direction:column;gap:8px}
+.dkm-topic-item{
+  font-size:13px;color:#c3d1e2;padding:8px 11px;border-radius:9px;
+  background:rgba(9,17,29,.5);border-left:2px solid rgba(255,209,102,.4);
+}
+
+/* ===== 关键词解析 ===== */
+.dkm-parse-grid{display:grid;grid-template-columns:1fr .82fr;gap:30px;align-items:start}
+.dkm-parse-grid h3{font-size:18px;margin:26px 0 10px;color:var(--dk-amber);letter-spacing:.4px}
+.dkm-parse-grid h3:first-child{margin-top:0}
+.dkm-parse-grid p{font-size:14.5px;color:#bccbdd;margin-bottom:12px;text-align:justify}
+.dkm-parse-side{
+  background:var(--dk-card);border:1px solid var(--dk-line);border-radius:var(--dk-radius);
+  padding:22px;display:flex;flex-direction:column;gap:16px;
+}
+.dkm-parse-side h3{font-size:16px;color:var(--dk-amber)}
+.dkm-bar{display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--dk-mist)}
+.dkm-bar-track{height:8px;border-radius:99px;background:rgba(159,178,202,.16);overflow:hidden}
+.dkm-bar-fill{height:100%;border-radius:99px;background:linear-gradient(90deg,var(--dk-amber-deep),var(--dk-amber))}
+.dkm-bar-top{display:flex;justify-content:space-between}
+.dkm-bar-top b{color:var(--dk-ice);font-weight:600}
+
+/* ===== 作者区：双列简介 ===== */
+.dkm-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.dkm-author{
+  display:flex;gap:15px;background:var(--dk-card);border:1px solid var(--dk-line);
+  border-radius:var(--dk-radius);padding:18px;transition:.25s;
+}
+.dkm-author:hover{border-color:rgba(255,209,102,.44);transform:translateY(-3px)}
+.dkm-avatar{
+  flex:none;width:56px;height:56px;border-radius:16px;display:grid;place-items:center;
+  font-size:21px;font-weight:800;color:#101a2a;letter-spacing:0;
+}
+.dkm-av1{background:linear-gradient(140deg,#ffd166,#ff9f1c)}
+.dkm-av2{background:linear-gradient(140deg,#8ecae6,#219ebc);color:#081421}
+.dkm-av3{background:linear-gradient(140deg,#4cc9a0,#2a9d8f);color:#062018}
+.dkm-av4{background:linear-gradient(140deg,#c9b6ff,#8b6cf0);color:#150b2e}
+.dkm-av5{background:linear-gradient(140deg,#ffb4a2,#ef6461);color:#2b0a09}
+.dkm-av6{background:linear-gradient(140deg,#ffe08f,#c9a227);color:#241c02}
+.dkm-author-info{min-width:0}
+.dkm-author-info h3{font-size:16px;margin-bottom:3px}
+.dkm-author-role{font-size:12px;color:var(--dk-amber);margin-bottom:7px}
+.dkm-author-info p{font-size:12.8px;color:var(--dk-mist);line-height:1.72}
+.dkm-author-nums{display:flex;gap:14px;margin-top:9px;font-size:12px;color:#8499b2;flex-wrap:wrap}
+.dkm-author-nums b{color:#d3e0ee;font-weight:600}
+.dkm-author-btn{
+  margin-top:9px;border:1px solid var(--dk-line);background:transparent;
+  color:#a9bcd2;border-radius:8px;padding:3px 11px;font-size:12px;transition:.2s;
+}
+.dkm-author-btn:hover{border-color:var(--dk-amber);color:var(--dk-amber)}
+
+/* ===== 榜单 + 评价：双列短评 ===== */
+.dkm-rank-board{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-bottom:34px;
+}
+.dkm-rank-col{background:var(--dk-card);border:1px solid var(--dk-line);border-radius:var(--dk-radius);padding:18px}
+.dkm-rank-col h3{font-size:15px;color:var(--dk-amber);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.dkm-rank-col li{
+  display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-bottom:1px dashed var(--dk-line);font-size:13px;
+}
+.dkm-rank-col li:last-child{border-bottom:0}
+.dkm-rank-no{flex:none;width:20px;color:#7f93ab;font-weight:700;font-size:12px}
+.dkm-rank-col li b{font-weight:600;display:block;color:#dbe6f2;line-height:1.5}
+.dkm-rank-col li small{color:#7f93ab;font-size:11.5px}
+.dkm-comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.dkm-comment{
+  background:rgba(21,37,64,.66);border:1px solid var(--dk-line);border-radius:14px;padding:16px;
+  display:flex;flex-direction:column;gap:9px;
+}
+.dkm-comment-head{display:flex;align-items:center;gap:10px}
+.dkm-comment-head .dkm-avatar{width:36px;height:36px;border-radius:11px;font-size:14px}
+.dkm-comment-head b{font-size:13.5px}
+.dkm-comment-head small{color:#7f93ab;font-size:11.5px;display:block}
+.dkm-comment p{font-size:13px;color:#bccbdd;line-height:1.75}
+.dkm-comment-stars{color:var(--dk-amber);font-size:12px;letter-spacing:2px}
+.dkm-quote{
+  grid-column:span 2;border-left:3px solid var(--dk-amber);background:rgba(255,209,102,.06);
+  padding:16px 20px;border-radius:0 14px 14px 0;font-size:14px;color:#dbe6f2;font-style:italic;
+}
+.dkm-quote cite{display:block;margin-top:8px;font-style:normal;font-size:12.5px;color:var(--dk-amber)}
+
+/* ===== 动态 / 合作 / FAQ ===== */
+.dkm-dyn-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:start}
+.dkm-dyn-list{display:flex;flex-direction:column;gap:2px}
+.dkm-dyn-item{
+  display:flex;gap:16px;padding:15px 0;border-bottom:1px solid var(--dk-line);
+}
+.dkm-dyn-item:last-child{border-bottom:0}
+.dkm-dyn-date{
+  flex:none;width:74px;font-size:12px;color:var(--dk-amber);font-weight:700;letter-spacing:.4px;
+  padding-top:2px;
+}
+.dkm-dyn-item h3{font-size:15px;margin-bottom:4px}
+.dkm-dyn-item p{font-size:13px;color:var(--dk-mist)}
+.dkm-partners{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.dkm-partner{
+  background:var(--dk-card);border:1px solid var(--dk-line);border-radius:12px;
+  padding:14px;display:flex;align-items:center;gap:11px;font-size:13.5px;transition:.22s;
+}
+.dkm-partner:hover{border-color:rgba(255,209,102,.45)}
+.dkm-partner-mark{
+  width:34px;height:34px;border-radius:9px;flex:none;display:grid;place-items:center;
+  font-size:13px;font-weight:800;background:rgba(255,209,102,.14);color:var(--dk-amber);
+}
+.dkm-partner small{display:block;font-size:11.5px;color:#7f93ab}
+.dkm-faq{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.dkm-faq details{
+  background:var(--dk-card);border:1px solid var(--dk-line);border-radius:12px;
+  padding:15px 18px;transition:.22s;
+}
+.dkm-faq details[open]{border-color:rgba(255,209,102,.45);background:rgba(30,51,80,.8)}
+.dkm-faq summary{
+  cursor:pointer;font-size:14.5px;font-weight:600;list-style:none;
+  display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+.dkm-faq summary::-webkit-details-marker{display:none}
+.dkm-faq summary::after{content:"+";color:var(--dk-amber);font-size:18px;line-height:1}
+.dkm-faq details[open] summary::after{content:"−"}
+.dkm-faq details p{font-size:13px;color:var(--dk-mist);margin-top:10px;line-height:1.8}
+
+/* ===== 投稿 / 联系 ===== */
+.dkm-cta{
+  background:linear-gradient(120deg,var(--dk-navy-3),#0d1728 76%);
+  border:1px solid var(--dk-line);border-radius:var(--dk-radius);
+  padding:34px;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;
+}
+.dkm-cta h2{font-size:24px;margin-bottom:12px}
+.dkm-cta p{font-size:14px;color:var(--dk-mist);margin-bottom:8px}
+.dkm-cta-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.dkm-cta-side{display:flex;flex-direction:column;gap:10px}
+.dkm-cta-side div{
+  background:rgba(9,17,29,.55);border:1px solid var(--dk-line);border-radius:11px;
+  padding:12px 15px;font-size:13px;color:#bccbdd;
+}
+.dkm-cta-side b{color:var(--dk-amber);display:block;font-size:13px;margin-bottom:2px}
+
+/* ===== 页脚 ===== */
+.dkm-footer{background:#0a1322;border-top:1px solid var(--dk-line);padding:48px 0 26px}
+.dkm-foot-grid{display:grid;grid-template-columns:1.4fr .8fr .8fr .9fr;gap:28px}
+.dkm-foot-brand{display:flex;align-items:center;gap:11px;margin-bottom:14px}
+.dkm-foot-brand span{font-size:11px;color:var(--dk-mist);letter-spacing:1.6px;display:block}
+.dkm-foot-brand strong{font-size:17px}
+.dkm-footer p{font-size:13px;color:#8a9db4;line-height:1.85}
+.dkm-foot-col h4{font-size:14px;color:var(--dk-amber);margin-bottom:12px}
+.dkm-foot-col a,.dkm-foot-col li{font-size:13px;color:#8a9db4;display:block;padding:3px 0;transition:.2s}
+.dkm-foot-col a:hover{color:var(--dk-amber)}
+.dkm-foot-bottom{
+  margin-top:34px;padding-top:18px;border-top:1px solid var(--dk-line);
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:#7286a0;
+}
+
+/* ===== 交互元素 ===== */
+.dkm-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:var(--dk-amber);color:#1a1206;font-size:13.5px;font-weight:700;
+  padding:11px 22px;border-radius:999px;opacity:0;pointer-events:none;transition:.3s;z-index:200;
+  box-shadow:0 12px 30px rgba(0,0,0,.4);
+}
+.dkm-toast.dkm-show{opacity:1;transform:translate(-50%,0)}
+.dkm-top{
+  position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:13px;
+  border:1px solid var(--dk-line);background:var(--dk-navy-2);color:var(--dk-amber);
+  font-size:18px;display:grid;place-items:center;opacity:0;pointer-events:none;
+  transition:.3s;z-index:150;
+}
+.dkm-top.dkm-show{opacity:1;pointer-events:auto}
+.dkm-top:hover{background:var(--dk-navy-3)}
+.dkm-modal{
+  position:fixed;inset:0;background:rgba(5,10,18,.78);z-index:300;
+  display:none;place-items:center;padding:20px;backdrop-filter:blur(4px);
+}
+.dkm-modal.dkm-open{display:grid}
+.dkm-modal-box{
+  background:var(--dk-navy-2);border:1px solid var(--dk-line);border-radius:var(--dk-radius);
+  width:min(460px,100%);padding:26px;box-shadow:var(--dk-shadow);position:relative;
+}
+.dkm-modal-box h3{font-size:18px;margin-bottom:10px;color:var(--dk-amber)}
+.dkm-modal-box p{font-size:13.5px;color:var(--dk-mist);margin-bottom:14px}
+.dkm-modal-box label{font-size:12.5px;color:#a9bcd2;display:block;margin-bottom:5px}
+.dkm-modal-box input,.dkm-modal-box textarea,.dkm-modal-box select{
+  width:100%;background:var(--dk-navy);border:1px solid var(--dk-line);border-radius:9px;
+  color:var(--dk-ice);padding:9px 12px;font-size:13.5px;outline:0;margin-bottom:13px;font-family:inherit;
+}
+.dkm-modal-box input:focus,.dkm-modal-box textarea:focus{border-color:var(--dk-amber)}
+.dkm-modal-close{
+  position:absolute;right:14px;top:12px;border:0;background:transparent;color:#8499b2;font-size:21px;
+}
+.dkm-modal-close:hover{color:var(--dk-amber)}
+.dkm-filter-row{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:24px}
+.dkm-chip{
+  border:1px solid var(--dk-line);background:transparent;color:#a9bcd2;
+  border-radius:999px;padding:6px 15px;font-size:13px;transition:.2s;
+}
+.dkm-chip:hover{border-color:var(--dk-amber);color:var(--dk-amber)}
+.dkm-chip.dkm-active{background:var(--dk-amber);color:#1a1206;border-color:var(--dk-amber);font-weight:700}
+.dkm-hidden{display:none!important}
+
+/* ===== 响应式 ===== */
+@media(max-width:1000px){
+  .dkm-nav{display:none}
+  .dkm-burger{display:block}
+  .dkm-focus-grid,.dkm-parse-grid,.dkm-dyn-grid,.dkm-cta{grid-template-columns:1fr}
+  .dkm-videos{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dkm-rank-board{grid-template-columns:1fr}
+  .dkm-foot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:720px){
+  html{scroll-padding-top:118px}
+  .dkm-search{display:none}
+  .dkm-hero-inner{padding:52px 0 46px}
+  .dkm-hero-side{grid-template-columns:1fr}
+  .dkm-videos,.dkm-topics,.dkm-authors,.dkm-comments,.dkm-faq,.dkm-partners{grid-template-columns:1fr}
+  .dkm-quote{grid-column:span 1}
+  .dkm-hero-stats{grid-template-columns:1fr 1fr}
+  .dkm-sec{padding:46px 0}
+  .dkm-cta{padding:24px}
+  .dkm-foot-grid{grid-template-columns:1fr}
+  .dkm-notice-inner{font-size:12.5px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="dkm-sticky">
+  <div class="dkm-notice" role="region" aria-label="平台公告">
+    <div class="dkm-wrap dkm-notice-inner">
+      <span class="dkm-notice-tag">官方发布</span>
+      <div class="dkm-notice-scroll">
+        <div class="dkm-notice-track">
+          <span>「冬季赛程影像计划」新增 42 场高清正版赛事回放，已开放下载</span>
+          <span>第 27 期「每日大赛」报名通道开启，投稿截止 12 月 06 日</span>
+          <span>创作者激励计划第三批名单公示，新增 18 位垂直领域创作者</span>
+          <span>赛事攻略专栏更新《赛前 72 小时状态管理清单》</span>
+          <span>「冬季赛程影像计划」新增 42 场高清正版赛事回放，已开放下载</span>
+          <span>第 27 期「每日大赛」报名通道开启，投稿截止 12 月 06 日</span>
+        </div>
+      </div>
+      <a class="dkm-notice-link" href="#dkm-dynamics">查看全部更新</a>
+    </div>
+  </div>
+
+  <header class="dkm-header">
+    <div class="dkm-wrap dkm-header-inner">
+      <a class="dkm-brand" href="#dkm-top-anchor" aria-label="每日大赛免费在线官方网站首页">
+        <span class="dkm-brand-mark">每</span>
+        <span class="dkm-brand-txt">
+          <strong>每日大赛免费在线</strong>
+          <span>DAILY MATCH · OFFICIAL</span>
+        </span>
+      </a>
+      <nav class="dkm-nav" aria-label="主导航">
+        <a href="#dkm-focus">焦点推荐</a>
+        <a href="#dkm-videos">赛事影像</a>
+        <a href="#dkm-topics">专题企划</a>
+        <a href="#dkm-parse">品牌解读</a>
+        <a href="#dkm-authors">创作者</a>
+        <a href="#dkm-rank">口碑榜单</a>
+        <a href="#dkm-dynamics">企业动态</a>
+        <a href="#dkm-faq">常见问题</a>
+      </nav>
+      <div class="dkm-head-tools">
+        <div class="dkm-search">
+          <input id="dkmSearchInput" type="search" placeholder="搜索赛事、专题或创作者" aria-label="站内搜索">
+          <button type="button" id="dkmSearchBtn">搜索</button>
+        </div>
+        <span class="dkm-search-hint" id="dkmSearchHint" aria-live="polite"></span>
+        <button class="dkm-burger" type="button" id="dkmBurger" aria-label="展开导航" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <div class="dkm-mobile-nav" id="dkmMobileNav">
+      <a href="#dkm-focus">焦点推荐</a>
+      <a href="#dkm-videos">赛事影像</a>
+      <a href="#dkm-topics">专题企划</a>
+      <a href="#dkm-parse">品牌解读</a>
+      <a href="#dkm-authors">创作者</a>
+      <a href="#dkm-rank">口碑榜单</a>
+      <a href="#dkm-dynamics">企业动态</a>
+      <a href="#dkm-faq">常见问题</a>
+    </div>
+  </header>
+</div>
+
+<main id="dkm-top-anchor">
+
+  <!-- 首屏：全幅主视觉背景与浮动文字 -->
+  <section class="dkm-hero" aria-labelledby="dkm-hero-title">
+    <div class="dkm-hero-art" aria-hidden="true">
+      <svg viewBox="0 0 1440 620" preserveAspectRatio="xMidYMid slice" role="presentation">
+        <defs>
+          <radialGradient id="dkmHGlow" cx="72%" cy="24%" r="58%">
+            <stop offset="0%" stop-color="#ffd166" stop-opacity=".34"/>
+            <stop offset="100%" stop-color="#ffd166" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="dkmHStage" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#1d3a5c"/>
+            <stop offset="100%" stop-color="#0c1a2c"/>
+          </linearGradient>
+          <linearGradient id="dkmHTrack" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#ffd166" stop-opacity=".85"/>
+            <stop offset="100%" stop-color="#4cc9a0" stop-opacity=".5"/>
+          </linearGradient>
+        </defs>
+        <rect width="1440" height="620" fill="url(#dkmHStage)"/>
+        <rect width="1440" height="620" fill="url(#dkmHGlow)"/>
+        <g stroke="#9fb2ca" stroke-opacity=".1">
+          <path d="M0 470 L1440 300"/>
+          <path d="M0 540 L1440 380"/>
+          <path d="M0 610 L1440 460"/>
+        </g>
+        <g fill="none" stroke="url(#dkmHTrack)" stroke-width="3" opacity=".8">
+          <ellipse cx="1040" cy="300" rx="300" ry="122"/>
+          <ellipse cx="1040" cy="300" rx="222" ry="90" stroke-opacity=".55"/>
+          <ellipse cx="1040" cy="300" rx="148" ry="60" stroke-opacity=".35"/>
+        </g>
+        <g fill="#ffd166" opacity=".9">
+          <circle cx="1040" cy="178" r="9"/>
+          <circle cx="740" cy="300" r="7"/>
+          <circle cx="1340" cy="300" r="7"/>
+          <circle cx="1040" cy="422" r="6"/>
+        </g>
+        <g fill="#4cc9a0" opacity=".75">
+          <circle cx="900" cy="215" r="5"/>
+          <circle cx="1185" cy="368" r="5"/>
+        </g>
+        <g stroke="#e8eef7" stroke-opacity=".16" stroke-width="2">
+          <path d="M1160 118 L1215 172 L1160 226 L1105 172 Z"/>
+          <path d="M880 400 L915 436 L880 472 L845 436 Z"/>
+        </g>
+        <g fill="#e8eef7" fill-opacity=".2">
+          <rect x="1240" y="120" width="86" height="7" rx="3.5"/>
+          <rect x="1240" y="140" width="56" height="7" rx="3.5"/>
+          <rect x="1240" y="160" width="70" height="7" rx="3.5"/>
+        </g>
+      </svg>
+    </div>
+    <div class="dkm-hero-shade" aria-hidden="true"></div>
+    <div class="dkm-wrap dkm-hero-inner">
+      <div class="dkm-hero-copy">
+        <span class="dkm-hero-badge">官方网站 · 企业级赛事影像平台</span>
+        <h1 id="dkm-hero-title">每日大赛免费在线</h1>
+        <p class="dkm-hero-lead">把每一场比赛，都拍成值得回看的影像。这里是每日大赛免费在线的官方视频门户，记录赛程、见证成长。</p>
+        <p class="dkm-hero-intro">作为深耕赛事内容领域的视频品牌，我们持续搭建高品质内容生态：每日更新高清正版赛事回放、赛前攻略与创作者观察，为选手、俱乐部与观众提供值得信赖的一站式影像平台。平台坚持用户至上，以原创与专业为底色，让每一份热爱被真实记录。</p>
+        <div class="dkm-hero-stats">
+          <div class="dkm-stat"><b>1,860<span style="font-size:14px">+</span></b><span>累计上线赛事影像</span></div>
+          <div class="dkm-stat"><b>312<span style="font-size:14px">万</span></b><span>月度视频播放量</span></div>
+          <div class="dkm-stat"><b>96.4<span style="font-size:14px">%</span></b><span>用户口碑好评率</span></div>
+        </div>
+        <div class="dkm-hero-actions">
+          <a class="dkm-btn dkm-btn-main" href="#dkm-videos">观看赛事影像</a>
+          <a class="dkm-btn dkm-btn-ghost" href="#dkm-topics">浏览专题企划</a>
+          <button class="dkm-btn dkm-btn-ghost" type="button" data-dkm-open="submit">我要投稿报名</button>
+        </div>
+      </div>
+      <div class="dkm-hero-side">
+        <div class="dkm-hero-note"><strong>今日更新 12 条</strong>新增 4 场高清回放与 8 条创作者笔记</div>
+        <div class="dkm-hero-note"><strong>第 27 期报名中</strong>投稿截止 12 月 06 日，欢迎上传作品</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="dkm-ticker" aria-hidden="true">
+    <div class="dkm-ticker-track">
+      <span>官方发布 · <b>第 27 期「每日大赛」</b>报名通道已开启</span>
+      <span>高清正版 · <b>冬季赛程影像计划</b>新增 42 场回放</span>
+      <span>创作者 · 本月新增 <b>18 位</b>垂直领域认证作者</span>
+      <span>社区 · 本周赛事攻略专区阅读量 <b>26.7 万</b></span>
+      <span>官方发布 · <b>第 27 期「每日大赛」</b>报名通道已开启</span>
+      <span>高清正版 · <b>冬季赛程影像计划</b>新增 42 场回放</span>
+    </div>
+  </div>
+
+  <!-- 焦点推荐 -->
+  <section class="dkm-sec" id="dkm-focus" aria-labelledby="dkm-focus-title">
+    <div class="dkm-wrap">
+      <div class="dkm-sec-head">
+        <span class="dkm-eyebrow">Focus · 焦点推荐</span>
+        <h2 class="dkm-h2" id="dkm-focus-title">今日焦点：每日大赛免费在线精选影像</h2>
+        <p>由编辑部与创作者社区共同推选的精品内容，覆盖赛程回放、赛前攻略与幕后记录，每一帧都来自官方高清片源。</p>
+      </div>
+
+      <div class="dkm-focus-grid">
+        <article class="dkm-feature">
+          <div class="dkm-feature-media">
+            <svg viewBox="0 0 640 360" role="img" aria-label="夜色体育馆内每日大赛决赛现场的高角度全景画面">
+              <defs>
+                <linearGradient id="dkmF1Sky" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#0b1d31"/><stop offset="100%" stop-color="#17324f"/>
+                </linearGradient>
+                <linearGradient id="dkmF1Floor" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#2b4a6d"/><stop offset="100%" stop-color="#122a44"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#dkmF1Sky)"/>
+              <rect y="228" width="640" height="132" fill="url(#dkmF1Floor)"/>
+              <g fill="#ffd166" opacity=".85">
+                <circle cx="96" cy="52" r="4"/><circle cx="192" cy="52" r="4"/><circle cx="288" cy="52" r="4"/>
+                <circle cx="384" cy="52" r="4"/><circle cx="480" cy="52" r="4"/><circle cx="576" cy="52" r="4"/>
+              </g>
+              <g stroke="#9fb2ca" stroke-opacity=".35" stroke-width="2">
+                <path d="M60 66 L120 228"/><path d="M160 66 L200 228"/><path d="M480 66 L440 228"/><path d="M580 66 L520 228"/>
+              </g>
+              <ellipse cx="320" cy="288" rx="196" ry="46" fill="#0d2137"/>
+              <ellipse cx="320" cy="288" rx="196" ry="46" fill="none" stroke="#ffd166" stroke-opacity=".55" stroke-width="2"/>
+              <ellipse cx="320" cy="288" rx="120" ry="26" fill="none" stroke="#e8eef7" stroke-opacity=".3" stroke-width="2"/>
+              <g fill="#4cc9a0">
+                <circle cx="214" cy="262" r="7"/><circle cx="262" cy="300" r="7"/><circle cx="380" cy="300" r="7"/><circle cx="428" cy="262" r="7"/>
+              </g>
+              <g fill="#e8eef7" opacity=".2">
+                <rect x="40" y="120" width="90" height="8" rx="4"/><rect x="40" y="142" width="62" height="8" rx="4"/>
+                <rect x="512" y="120" width="90" height="8" rx="4"/><rect x="512" y="142" width="70" height="8" rx="4"/>
+              </g>
+            </svg>
+            <span class="dkm-play" aria-hidden="true"><i>▶</i></span>
+          </div>
+          <div class="dkm-feature-body">
+            <div class="dkm-tagrow">
+              <span class="dkm-tag">赛事回放</span><span class="dkm-tag">高清正版</span><span class="dkm-tag">官方发布</span>
+            </div>
+            <h3>决赛夜全景实录：最后 4 分 12 秒的攻防细节拆解</h3>
+            <p>从暂停布置到关键回合选择，我们按时间轴还原了每日大赛免费在线第 26 期决赛的决胜片段，并附上三位教练的赛后复盘笔记，适合反复观看的战术样本。</p>
+            <div class="dkm-meta">
+              <span>作者 <b>赛程观察组</b></span>
+              <span>播放 <b>18.6 万</b></span>
+              <span>点赞 <b>9,240</b></span>
+              <span>时长 <b>24:18</b></span>
+            </div>
+          </div>
+        </article>
+
+        <div class="dkm-focus-list">
+          <article class="dkm-mini">
+            <span class="dkm-mini-num">01</span>
+            <div>
+              <h4>赛前 72 小时：职业选手的状态管理清单</h4>
+              <p>睡眠、热身与饮食节奏如何影响临场判断，附可打印的赛前检查表。</p>
+              <small>攻略干货 · 林舟教练 · 播放 6.4 万</small>
+            </div>
+          </article>
+          <article class="dkm-mini">
+            <span class="dkm-mini-num">02</span>
+            <div>
+              <h4>镜头背后的 30 分钟：赛事导播间工作记录</h4>
+              <p>从机位调度到实时字幕，带你看清一场高清直播的完整生产流程。</p>
+              <small>创作幕后 · 影像工坊 · 播放 4.1 万</small>
+            </div>
+          </article>
+          <article class="dkm-mini">
+            <span class="dkm-mini-num">03</span>
+            <div>
+              <h4>新人第一次参赛：从报名到上场的 9 个步骤</h4>
+              <p>面向首次参赛者的完整指引，包含报名资料、装备准备与现场流程。</p>
+              <small>经验分享 · 阿元 · 播放 3.8 万</small>
+            </div>
+          </article>
+          <article class="dkm-mini">
+            <span class="dkm-mini-num">04</span>
+            <div>
+              <h4>城市分站赛地图：今年新增的 6 个比赛场地</h4>
+              <p>交通、看台与拍摄位建议，一次说清现场观赛的最佳位置。</p>
+              <small>城市探索 · 老周 · 播放 2.9 万</small>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 赛事影像流：三列等高卡片 + 标签筛选 -->
+  <section class="dkm-sec dkm-sec-alt" id="dkm-videos" aria-labelledby="dkm-videos-title">
+    <div class="dkm-wrap">
+      <div class="dkm-sec-head">
+        <span class="dkm-eyebrow">Videos · 赛事影像</span>
+        <h2 class="dkm-h2" id="dkm-videos-title">每日大赛免费在线的高清赛事影像库</h2>
+        <p>按主题筛选你关心的内容。所有影像均由平台官方或认证创作者上传，正版授权、高清呈现，支持收藏与分享。</p>
+      </div>
+
+      <div class="dkm-filter-row" id="dkmFilterRow" role="group" aria-label="影像标签筛选">
+        <button class="dkm-chip dkm-active" type="button" data-dkm-filter="all">全部</button>
+        <button class="dkm-chip" type="button" data-dkm-filter="回放">赛事回放</button>
+        <button class="dkm-chip" type="button" data-dkm-filter="攻略">赛前攻略</button>
+        <button class="dkm-chip" type="button" data-dkm-filter="幕后">创作幕后</button>
+        <button class="dkm-chip" type="button" data-dkm-filter="访谈">人物访谈</button>
+      </div>
+
+      <div class="dkm-videos" id="dkmVideoGrid">
+        <article class="dkm-vcard" data-dkm-cat="回放">
+          <div class="dkm-vthumb">
+            <svg viewBox="0 0 480 270" role="img" aria-label="第 26 期半决赛夜场赛道与计时牌的画面">
+              <rect width="480" height="270" fill="#102338"/>
+              <g stroke="#4cc9a0" stroke-opacity=".5" stroke-width="3" fill="none">
+                <path d="M20 220 C 120 220, 160 120, 260 120 S 400 60, 460 60"/>
+                <path d="M20 240 C 130 240, 180 150, 280 150 S 410 96, 460 96" stroke-opacity=".28"/>
+              </g>
+              <rect x="330" y="40" width="110" height="62" rx="8" fill="#0a1a2c" stroke="#ffd166" stroke-opacity=".6"/>
+              <text x="385" y="72" text-anchor="middle" font-size="24" font-family="monospace" fill="#ffd166">02:41</text>
+              <text x="385" y="90" text-anchor="middle" font-size="10" font-family="monospace" fill="#9fb2ca">ROUND 26</text>
+              <g fill="#ffd166"><circle cx="260" cy="120" r="6"/><circle cx="460" cy="60" r="5"/></g>
+            </svg>
+            <span class="dkm-vdur">18:42</span>
+          </div>
+          <div class="dkm-vbody">
+            <div class="dkm-tagrow"><span class="dkm-tag">回放</span><span class="dkm-tag">高清</span></div>
+            <h3>第 26 期半决赛完整回放 · 官方多机位版</h3>
+            <p>四机位同步切换，保留现场声与解说双音轨，适合复盘关键回合。</p>
+            <div class="dkm-vfoot">
+              <span>赛程观察组 · 12.3 万播放</span>
+              <div class="dkm-icon-actions">
+                <button class="dkm-icon-btn" type="button" data-dkm-like>赞 6,812</button>
+                <button class="dkm-icon-btn" type="button" data-dkm-save>收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="dkm-vcard" data-dkm-cat="攻略">
+          <div class="dkm-vthumb">
+            <svg viewBox="0 0 480 270" role="img" aria-label="赛前热身与状态调整的清单式示意图">
+              <rect width="480" height="270" fill="#132a41"/>
+              <g fill="#1e3c59"><rect x="26" y="30" width="190" height="14" rx="7"/><rect x="26" y="58" width="150" height="14" rx="7"/><rect x="26" y="86" width="172" height="14" rx="7"/></g>
+              <g stroke="#4cc9a0" stroke-width="3" fill="none"><path d="M32 37 l7 8 12-14"/><path d="M32 65 l7 8 12-14"/><path d="M32 93 l7 8 12-14"/></g>
+              <circle cx="356" cy="134" r="72" fill="none" stroke="#ffd166" stroke-width="3" stroke-opacity=".75"/>
+              <path d="M356 134 L356 78" stroke="#ffd166" stroke-width="4"/><path d="M356 134 L400 158" stroke="#ef6461" stroke-width="4"/>
+              <circle cx="356" cy="134" r="6" fill="#e8eef7"/>
+              <g fill="#9fb2ca" opacity=".55"><rect x="288" y="222" width="136" height="9" rx="4.5"/><rect x="288" y="240" width="96" height="9" rx="4.5"/></g>
+            </svg>
+            <span class="dkm-vdur">11:05</span>
+          </div>
+          <div class="dkm-vbody">
+            <div class="dkm-tagrow"><span class="dkm-tag">攻略</span><span class="dkm-tag">实用技巧</span></div>
+            <h3>赛前 72 小时状态管理：睡眠、热身与饮食节奏</h3>
+            <p>把准备拆成可执行的清单，帮助选手把注意力留给真正的比赛。</p>
+            <div class="dkm-vfoot">
+              <span>林舟教练 · 6.4 万播放</span>
+              <div class="dkm-icon-actions">
+                <button class="dkm-icon-btn" type="button" data-dkm-like>赞 4,105</button>
+                <button class="dkm-icon-btn" type="button" data-dkm-save>收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="dkm-vcard" data-dkm-cat="幕后">
+          <div class="dkm-vthumb">
+            <svg viewBox="0 0 480 270" role="img" aria-label="赛事导播间多屏监视器与调音台的幕后画面">
+              <rect width="480" height="270" fill="#0d1f31"/>
+              <g stroke="#2d5277" fill="#16304a">
+                <rect x="28" y="26" width="126" height="76" rx="6"/><rect x="164" y="26" width="126" height="76" rx="6"/><rect x="300" y="26" width="126" height="76" rx="6"/>
+              </g>
+              <g fill="#4cc9a0" opacity=".8"><rect x="38" y="42" width="72" height="6" rx="3"/><rect x="174" y="42" width="96" height="6" rx="3"/><rect x="310" y="42" width="60" height="6" rx="3"/></g>
+              <g fill="#ffd166" opacity=".8"><rect x="38" y="56" width="106" height="6" rx="3"/><rect x="174" y="56" width="70" height="6" rx="3"/><rect x="310" y="56" width="92" height="6" rx="3"/></g>
+              <rect x="28" y="126" width="398" height="34" rx="8" fill="#13293f"/>
+              <g fill="#9fb2ca" opacity=".7"><rect x="44" y="138" width="9" height="10" rx="2"/><rect x="62" y="132" width="9" height="22" rx="2"/><rect x="80" y="126" width="9" height="34" rx="2"/><rect x="98" y="136" width="9" height="14" rx="2"/><rect x="116" y="128" width="9" height="30" rx="2"/><rect x="134" y="140" width="9" height="8" rx="2"/></g>
+              <g fill="#ef6461"><circle cx="366" cy="143" r="6"/><circle cx="390" cy="143" r="6" opacity=".5"/></g>
+              <g fill="#9fb2ca" opacity=".4"><rect x="28" y="184" width="250" height="10" rx="5"/><rect x="28" y="204" width="186" height="10" rx="5"/></g>
+            </svg>
+            <span class="dkm-vdur">15:30</span>
+          </div>
+          <div class="dkm-vbody">
+            <div class="dkm-tagrow"><span class="dkm-tag">幕后</span><span class="dkm-tag">创作幕后</span></div>
+            <h3>一场直播的诞生：导播间里的 30 分钟</h3>
+            <p>机位调度、实时字幕与慢动作回放，还原高清直播的生产链条。</p>
+            <div class="dkm-vfoot">
+              <span>影像工坊 · 4.1 万播放</span>
+              <div class="dkm-icon-actions">
+                <button class="dkm-icon-btn" type="button" data-dkm-like>赞 2,338</button>
+                <button class="dkm-icon-btn" type="button" data-dkm-save>收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="dkm-vcard" data-dkm-cat="访谈">
+          <div class="dkm-vthumb">
+            <svg viewBox="0 0 480 270" role="img" aria-label="创作者访谈中人物对谈的简笔场景">
+              <rect width="480" height="270" fill="#12253b"/>
+              <circle cx="150" cy="108" r="34" fill="#ffd166" fill-opacity=".85"/>
+              <path d="M96 210 q54 -58 108 0" stroke="#ffd166" stroke-width="4" fill="none" stroke-opacity=".7"/>
+              <circle cx="336" cy="108" r="34" fill="#8ecae6" fill-opacity=".85"/>
+              <path d="M282 210 q54 -58 108 0" stroke="#8ecae6" stroke-width="4" fill="none" stroke-opacity=".7"/>
+              <g fill="#e8eef7" opacity=".25"><rect x="196" y="96" width="88" height="8" rx="4"/><rect x="208" y="118" width="64" height="8" rx="4"/><rect x="216" y="140" width="48" height="8" rx="4"/></g>
+              <g fill="#4cc9a0"><circle cx="240" cy="204" r="5"/><circle cx="264" cy="204" r="5"/><circle cx="288" cy="204" r="5" opacity=".5"/></g>
+            </svg>
+            <span class="dkm-vdur">21:16</span>
+          </div>
+          <div class="dkm-vbody">
+            <div class="dkm-tagrow"><span class="dkm-tag">访谈</span><span class="dkm-tag">人物访谈</span></div>
+            <h3>对话三届冠军：把紧张变成节奏的三种方法</h3>
+            <p>从失误复盘到临场呼吸法，冠军谈他眼中真正重要的赛前准备。</p>
+            <div class="dkm-vfoot">
+              <span>小满在场 · 3.6 万播放</span>
+              <div class="dkm-icon-actions">
+                <button class="dkm-icon-btn" type="button" data-dkm-like>赞 1,970</button>
+                <button class="dkm-icon-btn" type="button" data-dkm-save>收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="dkm-vcard" data-dkm-cat="回放">
+          <div class="dkm-vthumb">
+            <svg viewBox="0 0 480 270" role="img" aria-label="每日大赛新人组春季分站赛的赛道俯视画面">
+              <rect width="480" height="270" fill="#0f2236"/>
+              <g stroke="#ffd166" stroke-opacity=".66" stroke-width="4" fill="none">
+                <rect x="52" y="46" width="376" height="178" rx="34"/>
+              </g>
+              <g stroke="#e8eef7" stroke-opacity=".2" stroke-width="2" fill="none">
+                <rect x="82" y="72" width="316" height="126" rx="22" stroke-dasharray="8 10"/>
+              </g>
+              <g fill="#4cc9a0"><circle cx="140" cy="78" r="6"/><circle cx="240" cy="78" r="6"/><circle cx="340" cy="78" r="6"/></g>
+              <g fill="#ef6461"><circle cx="140" cy="196" r="6"/><circle cx="240" cy="196" r="6"/><circle cx="340" cy="196" r="6"/></g>
+              <text x="240" y="146" text-anchor="middle" font-size="20" font-family="monospace" fill="#9fb2ca">SPRING · DIV B</text>
+            </svg>
+            <span class="dkm-vdur">32:50</span>
+          </div>
+          <div class="dkm-vbody">
+            <div class="dkm-tagrow"><span class="dkm-tag">回放</span><span class="dkm-tag">新人组</span></div>
+            <h3>新人组春季分站赛 · 完整赛程回放</h3>
+            <p>12 支新人队伍首次登场，附赛后数据统计与教练点评。</p>
+            <div class="dkm-vfoot">
+              <span>赛程观察组 · 8.9 万播放</span>
+              <div class="dkm-icon-actions">
+                <button class="dkm-icon-btn" type="button" data-dkm-like>赞 3,466</button>
+                <button class="dkm-icon-btn" type="button" data-dkm-save>收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="dkm-vcard" data-dkm-cat="攻略">
+          <div class="dkm-vthumb">
+            <svg viewBox="0 0 480 270" role="img" aria-label="三步式报名流程的图解画面">
+              <rect width="480" height="270" fill="#142a41"/>
+              <g fill="none" stroke="#ffd166" stroke-width="3">
+                <circle cx="100" cy="132" r="34"/><circle cx="240" cy="132" r="34"/><circle cx="380" cy="132" r="34"/>
+              </g>
+              <g fill="#ffd166"><text x="100" y="140" text-anchor="middle" font-size="22" font-family="monospace">01</text></g>
+              <g fill="#8ecae6"><text x="240" y="140" text-anchor="middle" font-size="22" font-family="monospace">02</text></g>
+              <g fill="#4cc9a0"><text x="380" y="140" text-anchor="middle" font-size="22" font-family="monospace">03</text></g>
+              <g stroke="#9fb2ca" stroke-opacity=".45" stroke-width="2" stroke-dasharray="7 7">
+                <path d="M136 132 L202 132"/><path d="M276 132 L342 132"/>
+              </g>
+              <g fill="#9fb2ca" opacity=".55"><rect x="66" y="188" width="68" height="8" rx="4"/><rect x="206" y="188" width="68" height="8" rx="4"/><rect x="346" y="188" width="68" height="8" rx="4"/></g>
+            </svg>
+            <span class="dkm-vdur">09:44</span>
+          </div>
+          <div class="dkm-vbody">
+            <div class="dkm-tagrow"><span class="dkm-tag">攻略</span><span class="dkm-tag">报名</span></div>
+            <h3>三步完成报名：资料、装备与现场流程一次说清</h3>
+            <p>为第一次参加每日大赛的选手准备的上场前指引。</p>
+            <div class="dkm-vfoot">
+              <span>阿元 · 3.8 万播放</span>
+              <div class="dkm-icon-actions">
+                <button class="dkm-icon-btn" type="button" data-dkm-like>赞 2,102</button>
+                <button class="dkm-icon-btn" type="button" data-dkm-save>收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="dkm-sec" id="dkm-topics" aria-labelledby="dkm-topics-title">
+    <div class="dkm-wrap">
+      <div class="dkm-sec-head">
+        <span class="dkm-eyebrow">Series · 专题企划</span>
+        <h2 class="dkm-h2" id="dkm-topics-title">专题企划：围绕每日大赛免费在线的深度内容</h2>
+        <p>平台以专题方式组织精品内容，把零散的赛程影像串成可以系统观看的影像档案。</p>
+      </div>
+
+      <div class="dkm-topics">
+        <article class="dkm-topic">
+          <div class="dkm-topic-top">
+            <h3>冬季赛程影像计划</h3>
+            <span class="dkm-status">持续更新</span>
+          </div>
+          <p>覆盖 11 月至次年 2 月的全部官方赛程，包含高清回放、关键回合切片与赛后复盘，是观察整个赛季走向的主线专题。</p>
+          <ul class="dkm-topic-list">
+            <li class="dkm-topic-item">第 26 期决赛 · 多机位完整回放</li>
+            <li class="dkm-topic-item">冬季分站赛地图与现场观赛指南</li>
+            <li class="dkm-topic-item">赛季中期数据观察：攻防节奏变化</li>
+          </ul>
+        </article>
+
+        <article class="dkm-topic">
+          <div class="dkm-topic-top">
+            <h3>创作者的第一次参赛</h3>
+            <span class="dkm-status">已完结</span>
+          </div>
+          <p>记录 6 位内容创作者首次以选手身份登上赛场的过程，从报名、训练到上场，呈现真实而具体的成长曲线。</p>
+          <ul class="dkm-topic-list">
+            <li class="dkm-topic-item">报名前夜：他们准备了什么</li>
+            <li class="dkm-topic-item">第一次失误之后的三十分钟</li>
+            <li class="dkm-topic-item">赛后回看：把紧张变成节奏</li>
+          </ul>
+        </article>
+
+        <article class="dkm-topic">
+          <div class="dkm-topic-top">
+            <h3>赛场之外的城市地图</h3>
+            <span class="dkm-status dkm-soon">12 月上线</span>
+          </div>
+          <p>以比赛场地为坐标，串起城市里的训练场、器材店与老选手常去的小馆子，构成一份有温度的在地观赛指南。</p>
+          <ul class="dkm-topic-list">
+            <li class="dkm-topic-item">六个新增比赛场地的交通与看台建议</li>
+            <li class="dkm-topic-item">训练场探访：凌晨四点还亮着灯的地方</li>
+            <li class="dkm-topic-item">赛后吃什么：本地选手的私藏清单</li>
+          </ul>
+        </article>
+
+        <article class="dkm-topic">
+          <div class="dkm-topic-top">
+            <h3>一台机器背后的七十二小时</h3>
+            <span class="dkm-status">持续更新</span>
+          </div>
+          <p>聚焦影像生产链：设备调试、灯光布置、声音采集与后期剪辑，呈现专业团队如何保证赛事影像的清晰与真实。</p>
+          <ul class="dkm-topic-list">
+            <li class="dkm-topic-item">导播间的一天：从对表到收工</li>
+            <li class="dkm-topic-item">慢动作回放背后的机位与帧率选择</li>
+            <li class="dkm-topic-item">声音工程：让现场声不吵也不闷</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌深度解析：关键词解析 800 字以上 -->
+  <section class="dkm-sec dkm-sec-alt" id="dkm-parse" aria-labelledby="dkm-parse-title">
+    <div class="dkm-wrap">
+      <div class="dkm-sec-head">
+        <span class="dkm-eyebrow">Brand · 品牌解读</span>
+        <h2 class="dkm-h2" id="dkm-parse-title">读懂「每日大赛免费在线」：一个视频品牌的内容方法论</h2>
+        <p>从品牌定位到内容生产，再到社区运营，我们用四个维度说明这个赛事影像平台如何持续运营。</p>
+      </div>
+
+      <div class="dkm-parse-grid">
+        <div>
+          <h3>一、品牌定位：把赛事做成可长期观看的影像档案</h3>
+          <p>「每日大赛免费在线」并不是一个只追逐热点的内容站点，而是一个围绕赛程持续积累影像资产的视频品牌。我们把这个平台理解为一间开放的影像档案馆：每一场比赛都拥有独立条目，记录时间、场地、参赛者、关键回合与赛后数据；每一条影像都标注清晰的来源与授权信息，观众可以放心下载与引用。对选手而言，这里是复盘成长的工具；对俱乐部与赛事组织者而言，这里是展示专业度的窗口；对普通观众而言，这里是理解一项赛事从规则到魅力的入口。</p>
+          <p>正因为如此，平台把「官方网站」四个字看得很重。官方发布意味着信息可靠、口径统一、更新及时；官方网站意味着所有内容都能被追溯、被核对、被长期访问。我们在每一条影像下方保留完整的元信息，包括拍摄日期、机位数量、是否含解说音轨，以及该片段的授权范围。这种看起来略显笨拙的做法，恰恰是视频内容平台建立口碑的基础。</p>
+
+          <h3>二、内容生产：原创、高清与专业三件事</h3>
+          <p>内容生产上，我们坚持三个关键词：原创、高清、专业。原创不是指所有镜头都必须由平台自己拍摄，而是指平台对内容的组织方式、解读角度与后期加工具有独立价值。例如同样的决赛画面，我们会在关键回合处加入时间轴标记、战术线条与教练语音注释，让一段回放具备教学意义。高清则是对画质的最低要求，平台主流内容以 1080P 起步，重点专题提供 4K 母版，并针对移动端做码率适配，尽可能减少观看时的卡顿与模糊。</p>
+          <p>专业体现在流程上。一个赛程影像条目从立项到上线，通常经历素材采集、多机位对轨、音画同步、字幕校对、合规审核与元数据录入六个环节；每个环节都有明确的责任人与验收标准。我们也会把制作流程本身拍成内容，让观众看到一条影像背后的七十二小时。这种透明化处理的直接结果，是创作者愿意把作品交给平台，观众愿意把时间交给平台。</p>
+
+          <h3>三、内容生态：创作者、观众与赛事方如何互相成就</h3>
+          <p>一个视频品牌的活力，来自内容生态中不同角色的持续互动。在「每日大赛免费在线」，创作者不只是上传者，他们同时是解说者、教练、选手与记录者。平台为认证创作者提供高清素材库、封面模板与剪辑建议，也提供数据看板，让他们看到哪些片段被反复观看、哪些章节被大量跳出。观众的每一次收藏与分享，都会成为创作者下一次选题的依据；赛事方的赛程安排与规则更新，则会直接影响专题企划的节奏。</p>
+          <p>为了让这种互动可持续，平台设计了分层的内容结构：官方发布负责权威信息与完整回放，认证创作者负责解读、攻略与幕后，社区投稿负责真实、碎片但鲜活的现场视角。三者互相补充，既不重复也不相互挤压。我们还定期组织线上比赛与创意挑战，鼓励用户上传自己的训练记录与观赛笔记，把「看比赛」变成「参与比赛」。</p>
+
+          <h3>四、社区运营：口碑来自真实的日常</h3>
+          <p>相比短期流量，我们更在意长期口碑。平台把社区运营拆成三件小事：第一，保持更新节奏稳定，公告条每天同步新增内容与赛程变化，让用户形成「有事可看」的预期；第二，认真对待每一条评价，无论是对画质的抱怨还是对解说的建议，都会在两周内给出回应并在更新日志中记录处理结果；第三，维护一个友好的讨论氛围，举报与反馈入口常驻页面，处理结果公开可查。</p>
+          <p>这些做法谈不上惊艳，却构成了一个视频品牌持续运营的底盘。用户至上不是一句口号，而是体现在加载速度、字幕可读性、移动端排版这些细节里。我们相信，当选手愿意把赛后复盘的链接发给队友，当新观众能在一个下午看懂一项赛事的规则，当创作者因为一条影像被更多人认识，「每日大赛免费在线」这个品牌才真正立住了。未来我们会继续深耕赛事影像这一垂直领域，把精品内容做厚，把社区做暖，让每一场比赛都留下值得回看的证据。</p>
+        </div>
+
+        <aside class="dkm-parse-side" aria-label="平台内容构成数据">
+          <h3>内容构成概览</h3>
+          <div class="dkm-bar">
+            <div class="dkm-bar-top"><span>赛事回放</span><b>42%</b></div>
+            <div class="dkm-bar-track"><div class="dkm-bar-fill" style="width:42%"></div></div>
+          </div>
+          <div class="dkm-bar">
+            <div class="dkm-bar-top"><span>赛前攻略</span><b>24%</b></div>
+            <div class="dkm-bar-track"><div class="dkm-bar-fill" style="width:24%"></div></div>
+          </div>
+          <div class="dkm-bar">
+            <div class="dkm-bar-top"><span>创作幕后</span><b>18%</b></div>
+            <div class="dkm-bar-track"><div class="dkm-bar-fill" style="width:18%"></div></div>
+          </div>
+          <div class="dkm-bar">
+            <div class="dkm-bar-top"><span>人物访谈</span><b>16%</b></div>
+            <div class="dkm-bar-track"><div class="dkm-bar-fill" style="width:16%"></div></div>
+          </div>
+          <p style="font-size:12.5px;color:#8a9db4;line-height:1.8">数据来源：平台内容中台 2026 年 10 月统计。内容结构每季度复核一次，确保精品内容比例稳定。</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵：双列简介 -->
+  <section class="dkm-sec" id="dkm-authors" aria-labelledby="dkm-authors-title">
+    <div class="dkm-wrap">
+      <div class="dkm-sec-head">
+        <span class="dkm-eyebrow">Creators · 创作者矩阵</span>
+        <h2 class="dkm-h2" id="dkm-authors-title">持续运营的创作者社区</h2>
+        <p>他们是教练、选手、记录者与解说者，也是每日大赛免费在线内容生态中最稳定的一群人。</p>
+      </div>
+
+      <div class="dkm-authors">
+        <article class="dkm-author">
+          <div class="dkm-avatar dkm-av1">林</div>
+          <div class="dkm-author-info">
+            <h3>林舟教练</h3>
+            <div class="dkm-author-role">赛前准备 · 战术复盘</div>
+            <p>前职业选手，现青训教练。擅长把复杂战术拆成普通观众也能听懂的步骤，视频里常出现白板与标记笔，被观众称为「最会画图的教练」。</p>
+            <div class="dkm-author-nums"><span>作品 <b>86</b></span><span>粉丝 <b>12.4 万</b></span></div>
+            <button class="dkm-author-btn" type="button" data-dkm-author="林舟教练|赛前准备与战术复盘方向创作者，前职业选手，现青训教练，累计发布 86 条赛事解读影像。">了解作者</button>
+          </div>
+        </article>
+
+        <article class="dkm-author">
+          <div class="dkm-avatar dkm-av2">影</div>
+          <div class="dkm-author-info">
+            <h3>影像工坊</h3>
+            <div class="dkm-author-role">赛事摄影 · 幕后记录</div>
+            <p>由三位纪录片摄影师组成的团队，专注赛事现场的镜头语言，长期跟拍每日大赛，作品以克制、真实的光影风格著称。</p>
+            <div class="dkm-author-nums"><span>作品 <b>64</b></span><span>粉丝 <b>9.7 万</b></span></div>
+            <button class="dkm-author-btn" type="button" data-dkm-author="影像工坊|纪录片摄影团队，专注赛事现场影像与幕后制作记录，累计发布 64 条作品。">了解作者</button>
+          </div>
+        </article>
+
+        <article class="dkm-author">
+          <div class="dkm-avatar dkm-av3">元</div>
+          <div class="dkm-author-info">
+            <h3>阿元</h3>
+            <div class="dkm-author-role">新人经验 · 报名指引</div>
+            <p>从零基础观众成长为参赛选手的内容创作者，擅长用第一视角记录第一次的一切：第一次报名、第一次上场、第一次失误后的调整。</p>
+            <div class="dkm-author-nums"><span>作品 <b>52</b></span><span>粉丝 <b>7.3 万</b></span></div>
+            <button class="dkm-author-btn" type="button" data-dkm-author="阿元|新人视角创作者，记录从观赛到参赛的完整过程，擅长经验分享与报名指引。">了解作者</button>
+          </div>
+        </article>
+
+        <article class="dkm-author">
+          <div class="dkm-avatar dkm-av4">满</div>
+          <div class="dkm-author-info">
+            <h3>小满在场</h3>
+            <div class="dkm-author-role">人物访谈 · 声音记录</div>
+            <p>音频记者出身，习惯把话筒递到最安静的人面前。她的访谈很少追问胜负，更关心选手如何与自己相处。</p>
+            <div class="dkm-author-nums"><span>作品 <b>43</b></span><span>粉丝 <b>6.1 万</b></span></div>
+            <button class="dkm-author-btn" type="button" data-dkm-author="小满在场|音频记者与访谈创作者，专注人物访谈与赛场声音记录，累计发布 43 条作品。">了解作者</button>
+          </div>
+        </article>
+
+        <article class="dkm-author">
+          <div class="dkm-avatar dkm-av5">周</div>
+          <div class="dkm-author-info">
+            <h3>老周逛赛场</h3>
+            <div class="dkm-author-role">城市探索 · 现场指南</div>
+            <p>城市漫游者，跑遍各地的分站赛场地，用镜头记录交通、看台与赛后小吃，内容务实，被观众当作观赛前的必备攻略。</p>
+            <div class="dkm-author-nums"><span>作品 <b>71</b></span><span>粉丝 <b>10.2 万</b></span></div>
+            <button class="dkm-author-btn" type="button" data-dkm-author="老周逛赛场|城市探索类创作者，专注分站赛场地与观赛动线指南，累计发布 71 条作品。">了解作者</button>
+          </div>
+        </article>
+
+        <article class="dkm-author">
+          <div class="dkm-avatar dkm-av6">数</div>
+          <div class="dkm-author-info">
+            <h3>赛程观察组</h3>
+            <div class="dkm-author-role">数据观察 · 官方发布</div>
+            <p>平台官方内容小组，负责完整回放、数据统计与赛季观察。风格冷静克制，擅长用一张图讲清一个赛季的变化。</p>
+            <div class="dkm-author-nums"><span>作品 <b>138</b></span><span>粉丝 <b>21.6 万</b></span></div>
+            <button class="dkm-author-btn" type="button" data-dkm-author="赛程观察组|平台官方内容小组，负责赛事回放、数据统计与赛季观察，累计发布 138 条影像。">了解作者</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 榜单 + 评价 -->
+  <section class="dkm-sec dkm-sec-alt" id="dkm-rank" aria-labelledby="dkm-rank-title">
+    <div class="dkm-wrap">
+      <div class="dkm-sec-head">
+        <span class="dkm-eyebrow">Ranking · 口碑与榜单</span>
+        <h2 class="dkm-h2" id="dkm-rank-title">数据榜单与用户口碑</h2>
+        <p>热度、口碑与新人表现三张榜单每两周更新一次，评价区保留真实语气与具体建议。</p>
+      </div>
+
+      <div class="dkm-rank-board">
+        <div class="dkm-rank-col">
+          <h3>热度榜 · 近 14 天</h3>
+          <ul>
+            <li><span class="dkm-rank-no">01</span><div><b>第 26 期半决赛完整回放</b><small>播放 12.3 万 · 收藏 5,206</small></div></li>
+            <li><span class="dkm-rank-no">02</span><div><b>决赛夜最后 4 分 12 秒拆解</b><small>播放 9.1 万 · 收藏 4,118</small></div></li>
+            <li><span class="dkm-rank-no">03</span><div><b>赛前 72 小时状态管理清单</b><small>播放 6.4 万 · 收藏 3,902</small></div></li>
+            <li><span class="dkm-rank-no">04</span><div><b>新人组春季分站赛回放</b><small>播放 5.7 万 · 收藏 2,866</small></div></li>
+          </ul>
+        </div>
+        <div class="dkm-rank-col">
+          <h3>新人榜 · 本月</h3>
+          <ul>
+            <li><span class="dkm-rank-no">01</span><div><b>阿元</b><small>作品 52 · 月增粉丝 1.8 万</small></div></li>
+            <li><span class="dkm-rank-no">02</span><div><b>小满在场</b><small>作品 43 · 月增粉丝 1.2 万</small></div></li>
+            <li><span class="dkm-rank-no">03</span><div><b>山间摄影师</b><small>作品 28 · 月增粉丝 9,400</small></div></li>
+            <li><span class="dkm-rank-no">04</span><div><b>器材小笔记</b><small>作品 31 · 月增粉丝 7,600</small></div></li>
+          </ul>
+        </div>
+        <div class="dkm-rank-col">
+          <h3>口碑榜 · 季度</h3>
+          <ul>
+            <li><span class="dkm-rank-no">01</span><div><b>赛程观察组</b><small>好评率 97.2% · 评价 3,416</small></div></li>
+            <li><span class="dkm-rank-no">02</span><div><b>林舟教练</b><small>好评率 96.8% · 评价 2,905</small></div></li>
+            <li><span class="dkm-rank-no">03</span><div><b>影像工坊</b><small>好评率 96.1% · 评价 2,233</small></div></li>
+            <li><span class="dkm-rank-no">04</span><div><b>老周逛赛场</b><small>好评率 95.4% · 评价 1,812</small></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="dkm-comments" id="dkmComments">
+        <article class="dkm-comment">
+          <div class="dkm-comment-head">
+            <div class="dkm-avatar dkm-av2">陈</div>
+            <div><b>陈默</b><small>参赛选手 · 2 小时前</small></div>
+          </div>
+          <div class="dkm-comment-stars">★★★★★</div>
+          <p>作为领队，我每周都会把平台上的战术拆解发给队员。最有用的是时间轴标记，暂停讨论时不用来回拖进度条，节省了很多沟通成本。</p>
+        </article>
+
+        <article class="dkm-comment">
+          <div class="dkm-comment-head">
+            <div class="dkm-avatar dkm-av3">罗</div>
+            <div><b>罗小川</b><small>观众 · 5 小时前</small></div>
+          </div>
+          <div class="dkm-comment-stars">★★★★☆</div>
+          <p>第一次完整看懂一整套赛制，就是从那个「三步报名」的视频开始的。如果能增加字幕字号调整就更好了，手机上看得有点吃力。</p>
+        </article>
+
+        <article class="dkm-comment">
+          <div class="dkm-comment-head">
+            <div class="dkm-avatar dkm-av1">许</div>
+            <div><b>许一诺</b><small>俱乐部工作人员 · 昨天</small></div>
+          </div>
+          <div class="dkm-comment-stars">★★★★★</div>
+          <p>授权信息标注得很清楚，这点在同类平台里少见。我们对外发布内容时可以直接引用，省去了反复确认版权的时间。</p>
+        </article>
+
+        <article class="dkm-comment">
+          <div class="dkm-comment-head">
+            <div class="dkm-avatar dkm-av4">洛</div>
+            <div><b>洛洛不落</b><small>内容创作者 · 2 天前</small></div>
+          </div>
+          <div class="dkm-comment-stars">★★★★☆</div>
+          <p>幕后专题比正片还好看，导播间那条我看了两遍。希望后面能讲讲不同场地灯光条件下怎么保持画质一致。</p>
+        </article>
+
+        <article class="dkm-comment">
+          <div class="dkm-comment-head">
+            <div class="dkm-avatar dkm-av5">孟</div>
+            <div><b>孟舟</b><small>家长 · 3 天前</small></div>
+          </div>
+          <div class="dkm-comment-stars">★★★★★</div>
+          <p>孩子刚开始接触比赛，我先看了新手指引，再陪他一起看回放，整个过程没有门槛。内容比较克制，没有夸张的标题，这点我很认可。</p>
+        </article>
+
+        <article class="dkm-comment">
+          <div class="dkm-comment-head">
+            <div class="dkm-avatar dkm-av6">高</div>
+            <div><b>高处不胜寒</b><small>老观众 · 4 天前</small></div>
+          </div>
+          <div class="dkm-comment-stars">★★★☆☆</div>
+          <p>整体不错，但部分早期回放的音轨偏闷，希望官方能考虑做一次声音修复。另外搜索结果的排序可以再优化，找特定场次略慢。</p>
+        </article>
+
+        <blockquote class="dkm-quote">
+          「我们不是在做一个看视频的地方，而是在做一份能陪着选手一起成长的影像档案。」
+          <cite>—— 赛程观察组 · 赛季中期访谈</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 + 合作 + FAQ -->
+  <section class="dkm-sec" id="dkm-dynamics" aria-labelledby="dkm-dynamics-title">
+    <div class="dkm-wrap">
+      <div class="dkm-sec-head">
+        <span class="dkm-eyebrow">Updates · 企业动态</span>
+        <h2 class="dkm-h2" id="dkm-dynamics-title">每日大赛免费在线的企业动态与合作生态</h2>
+        <p>官方发布的产品更新、赛程安排与合作伙伴信息，均可在此追溯。</p>
+      </div>
+
+      <div class="dkm-dyn-grid">
+        <div class="dkm-dyn-list">
+          <div class="dkm-dyn-item">
+            <span class="dkm-dyn-date">11.20</span>
+            <div>
+              <h3>冬季赛程影像计划上线 42 场高清回放</h3>
+              <p>新增内容覆盖 9 个分站赛场地，全部提供 1080P 与 4K 双版本，已开放下载与引用授权申请。</p>
+            </div>
+          </div>
+          <div class="dkm-dyn-item">
+            <span class="dkm-dyn-date">11.16</span>
+            <div>
+              <h3>第 27 期「每日大赛」报名通道开启</h3>
+              <p>报名截止 12 月 06 日，个人与团队均可提交，官方将提供赛前训练影像包作为备赛资料。</p>
+            </div>
+          </div>
+          <div class="dkm-dyn-item">
+            <span class="dkm-dyn-date">11.08</span>
+            <div>
+              <h3>创作者激励计划第三批名单公示</h3>
+              <p>18 位垂直领域创作者通过认证，将获得高清素材库权限、封面模板与季度创作基金支持。</p>
+            </div>
+          </div>
+          <div class="dkm-dyn-item">
+            <span class="dkm-dyn-date">10.29</span>
+            <div>
+              <h3>移动端播放器升级，支持字幕字号调节</h3>
+              <p>本次更新同时优化了弱网环境的清晰度切换策略，减少中途缓冲次数，提升观看流畅度。</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="dkm-h3" style="margin-bottom:14px">合作品牌 · 持续共建内容生态</h3>
+          <div class="dkm-partners">
+            <div class="dkm-partner"><span class="dkm-partner-mark">东</span><div>东方赛道器材<small>官方装备支持</small></div></div>
+            <div class="dkm-partner"><span class="dkm-partner-mark">观</span><div>观澜体育中心<small>场地合作</small></div></div>
+            <div class="dkm-partner"><span class="dkm-partner-mark">帧</span><div>帧率影像实验室<small>后期技术支持</small></div></div>
+            <div class="dkm-partner"><span class="dkm-partner-mark">拾</span><div>拾光运动康复<small>选手健康伙伴</small></div></div>
+            <div class="dkm-partner"><span class="dkm-partner-mark">南</span><div>南岸城市赛道<small>分站赛联合主办</small></div></div>
+            <div class="dkm-partner"><span class="dkm-partner-mark">声</span><div>声场音频工作室<small>声音工程协作</small></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:44px">
+        <h3 class="dkm-h3" style="margin-bottom:16px" id="dkm-faq">常见问题</h3>
+        <div class="dkm-faq">
+          <details>
+            <summary>平台上的赛事影像可以免费观看吗？</summary>
+            <p>可以。每日大赛免费在线的官方回放、攻略与访谈内容均提供免费观看，部分 4K 母版下载与商业引用需在站内提交授权申请，审核通过后开放。</p>
+          </details>
+          <details>
+            <summary>如何参加第 27 期「每日大赛」？</summary>
+            <p>点击页面中的「我要投稿报名」按钮填写报名信息，提交参赛类别与联系方式即可。报名截止 12 月 06 日，组委会会在三个工作日内回执确认。</p>
+          </details>
+          <details>
+            <summary>非认证创作者也可以上传作品吗？</summary>
+            <p>可以。所有用户均可通过投稿入口提交作品，经内容审核后上线。表现稳定的创作者可申请认证，获得高清素材库与创作基金支持。</p>
+          </details>
+          <details>
+            <summary>视频的画质和音轨可以切换吗？</summary>
+            <p>支持。播放器会根据网络状况自动选择清晰度，也可手动切换；带解说的条目录制了独立音轨，可在播放器设置中切换现场声与解说声。</p>
+          </details>
+          <details>
+            <summary>引用平台影像需要标明出处吗？</summary>
+            <p>需要。请在引用时注明「影像来源：每日大赛免费在线官方网站」，并保留原片尾标识。用于商业用途请先完成授权申请流程。</p>
+          </details>
+          <details>
+            <summary>遇到内容错误或版权问题怎么反馈？</summary>
+            <p>页面右下角提供反馈入口，也可通过页脚的联系方式提交。我们会在两个工作日内核实，处理结果记录在更新日志中。</p>
+          </details>
+          <details>
+            <summary>平台的数据多久更新一次？</summary>
+            <p>播放、点赞与收藏数据每小时同步一次；热度榜与口碑榜每两周更新；创作者粉丝数据每日更新，均以前端展示为准。</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 投稿与联系 -->
+  <section class="dkm-sec dkm-sec-alt" id="dkm-join" aria-labelledby="dkm-join-title">
+    <div class="dkm-wrap">
+      <div class="dkm-cta">
+        <div>
+          <h2 id="dkm-join-title">把你的比赛记录，交给每日大赛免费在线</h2>
+          <p>无论是完整赛程、训练日常还是赛后复盘，只要真实、清晰、有细节，都值得被更多人看到。平台为优质投稿提供高清转码、封面设计与流量推荐。</p>
+          <p>投稿即视为同意平台内容规范；商业合作与版权授权请通过下方渠道联系。</p>
+          <div class="dkm-cta-actions">
+            <button class="dkm-btn dkm-btn-main" type="button" data-dkm-open="submit">立即投稿报名</button>
+            <button class="dkm-btn dkm-btn-ghost" type="button" data-dkm-open="contact">联系合作</button>
+            <button class="dkm-btn dkm-btn-ghost" type="button" data-dkm-copy>复制本页链接</button>
+          </div>
+        </div>
+        <div class="dkm-cta-side">
+          <div><b>内容合作</b>brand@dailymatch.example（商务与授权）</div>
+          <div><b>创作者服务</b>creator@dailymatch.example（认证与投稿）</div>
+          <div><b>服务时间</b>周一至周五 10:00–19:00，节假日顺延</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="dkm-footer">
+  <div class="dkm-wrap">
+    <div class="dkm-foot-grid">
+      <div>
+        <div class="dkm-foot-brand">
+          <span class="dkm-brand-mark">每</span>
+          <div>
+            <strong>每日大赛免费在线</strong>
+            <span>DAILY MATCH · OFFICIAL</span>
+          </div>
+        </div>
+        <p>每日大赛免费在线官方网站，专注赛事影像与创作者内容生态，提供高清正版比赛回放、赛前攻略与人物访谈。平台坚持原创、专业与用户至上，持续运营，值得信赖。</p>
+      </div>
+      <div class="dkm-foot-col">
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#dkm-focus">焦点推荐</a></li>
+          <li><a href="#dkm-videos">赛事影像</a></li>
+          <li><a href="#dkm-topics">专题企划</a></li>
+          <li><a href="#dkm-parse">品牌解读</a></li>
+        </ul>
+      </div>
+      <div class="dkm-foot-col">
+        <h4>创作者</h4>
+        <ul>
+          <li><a href="#dkm-authors">创作者矩阵</a></li>
+          <li><a href="#dkm-rank">口碑榜单</a></li>
+          <li><a href="#dkm-dynamics">企业动态</a></li>
+          <li><a href="#dkm-faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div class="dkm-foot-col">
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#dkm-join">投稿与报名</a></li>
+          <li><a href="#dkm-join">商务合作</a></li>
+          <li><a href="#dkm-parse">品牌故事</a></li>
+          <li><a href="#dkm-top-anchor">回到首页</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="dkm-foot-bottom">
+      <span>© 2026 每日大赛免费在线 官方网站 · 版权所有 · 持续运营中</span>
+      <span>备案号：京ICP备2026000000号-1 · 内容合规审核通过</span>
+    </div>
+  </div>
+</footer>
+
+<div class="dkm-toast" id="dkmToast" role="status" aria-live="polite"></div>
+<button class="dkm-top" id="dkmBackTop" type="button" aria-label="回到顶部">↑</button>
+
+<div class="dkm-modal" id="dkmModal" role="dialog" aria-modal="true" aria-labelledby="dkmModalTitle">
+  <div class="dkm-modal-box">
+    <button class="dkm-modal-close" type="button" id="dkmModalClose" aria-label="关闭弹窗">×</button>
+    <h3 id="dkmModalTitle">投稿报名</h3>
+    <p id="dkmModalDesc">填写以下信息，组委会将在三个工作日内与你联系。</p>
+    <form id="dkmModalForm">
+      <label for="dkmFormName">姓名或昵称</label>
+      <input id="dkmFormName" type="text" placeholder="例如：阿元" required>
+      <label for="dkmFormContact">联系方式</label>
+      <input id="dkmFormContact" type="text" placeholder="手机或邮箱" required>
+      <label for="dkmFormTopic">投稿方向</label>
+      <select id="dkmFormTopic">
+        <option>赛事回放</option>
+        <option>赛前攻略</option>
+        <option>创作幕后</option>
+        <option>人物访谈</option>
+      </select>
+      <label for="dkmFormNote">内容说明</label>
+      <textarea id="dkmFormNote" rows="3" placeholder="简单描述作品内容与时长"></textarea>
+      <button class="dkm-btn dkm-btn-main" type="submit" style="width:100%;justify-content:center">提交</button>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 工具 ---------- */
+  var $ = function(sel, ctx){ return (ctx || document).querySelector(sel); };
+  var $$ = function(sel, ctx){ return Array.prototype.slice.call((ctx || document).querySelectorAll(sel)); };
+  var toastEl = $("#dkmToast");
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add("dkm-show");
+    if(toastTimer){ clearTimeout(toastTimer); }
+    toastTimer = setTimeout(function(){ toastEl.classList.remove("dkm-show"); }, 2200);
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = $("#dkmBurger");
+  var mobileNav = $("#dkmMobileNav");
+  burger.addEventListener("click", function(){
+    var open = mobileNav.classList.toggle("dkm-open");
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+    burger.textContent = open ? "×" : "☰";
+  });
+  $$("#dkmMobileNav a").forEach(function(a){
+    a.addEventListener("click", function(){
+      mobileNav.classList.remove("dkm-open");
+      burger.setAttribute("aria-expanded", "false");
+      burger.textContent = "☰";
+    });
+  });
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = $("#dkmSearchInput");
+  var searchHint = $("#dkmSearchHint");
+  var searchBtn = $("#dkmSearchBtn");
+  var searchable = $$("#dkmVideoGrid .dkm-vcard").concat($$("#dkmAuthors .dkm-author")).concat($$("#dkmTopicList .dkm-topic"));
+  function doSearch(){
+    var q = searchInput.value.trim();
+    if(!q){
+      searchHint.textContent = "请输入赛事或作者关键词";
+      return;
+    }
+    var hits = 0;
+    searchable.forEach(function(el){
+      if(el.textContent.indexOf(q) > -1){ hits++; }
+    });
+    searchHint.textContent = hits > 0 ? ("找到 " + hits + " 条相关内容") : "未找到，试试「回放」「攻略」";
+  }
+  if(searchBtn && searchInput){
+    searchBtn.addEventListener("click", doSearch);
+    searchInput.addEventListener("keydown", function(e){
+      if(e.key === "Enter"){ e.preventDefault(); doSearch(); }
+    });
+    searchInput.addEventListener("input", function(){
+      if(!searchInput.value.trim()){ searchHint.textContent = ""; }
+    });
+  }
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  $$("[data-dkm-like]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var text = btn.textContent.replace("赞 ", "").replace(/,/g, "");
+      var num = parseInt(text, 10);
+      if(isNaN(num)){ num = 0; }
+      if(btn.classList.contains("dkm-liked")){
+        num = Math.max(0, num - 1);
+        btn.classList.remove("dkm-liked");
+        btn.textContent = "赞 " + num.toLocaleString("en-US");
+        toast("已取消点赞");
+      }else{
+        num = num + 1;
+        btn.classList.add("dkm-liked");
+        btn.textContent = "赞 " + num.toLocaleString("en-US");
+        toast("点赞成功 +1");
+      }
+    });
+  });
+
+  $$("[data-dkm-save]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      if(btn.classList.contains("dkm-saved")){
+        btn.classList.remove("dkm-saved");
+        btn.textContent = "收藏";
+        toast("已取消收藏");
+      }else{
+        btn.classList.add("dkm-saved");
+        btn.textContent = "已收藏";
+        toast("已加入收藏夹");
+      }
+    });
+  });
+
+  /* ---------- 标签筛选 ---------- */
+  var chips = $$("#dkmFilterRow .dkm-chip");
+  var cards = $$("#dkmVideoGrid .dkm-vcard");
+  chips.forEach(function(chip){
+    chip.addEventListener("click", function(){
+      chips.forEach(function(c){ c.classList.remove("dkm-active"); });
+      chip.classList.add("dkm-active");
+      var cat = chip.getAttribute("data-dkm-filter");
+      var shown = 0;
+      cards.forEach(function(card){
+        var match = (cat === "all") || (card.getAttribute("data-dkm-cat") === cat);
+        card.classList.toggle("dkm-hidden", !match);
+        if(match){ shown++; }
+      });
+      toast("已筛选：" + chip.textContent + "（" + shown + " 条）");
+    });
+  });
+
+  /* ---------- 弹窗 ---------- */
+  var modal = $("#dkmModal");
+  var modalTitle = $("#dkmModalTitle");
+  var modalDesc = $("#dkmModalDesc");
+  var modalForm = $("#dkmModalForm");
+  var authorBackup = null;
+
+  function openModal(type, payload){
+    if(type === "submit"){
+      modalTitle.textContent = "投稿报名";
+      modalDesc.textContent = "填写以下信息，组委会将在三个工作日内与你联系。";
+      modalForm.reset();
+      modalForm.style.display = "";
+    }else if(type === "contact"){
+      modalTitle.textContent = "联系合作";
+      modalDesc.textContent = "商务与授权合作请联系 brand@dailymatch.example，创作者认证请联系 creator@dailymatch.example。也可在下方留下联系方式，我们会主动联系你。";
+      modalForm.reset();
+      modalForm.style.display = "";
+    }else if(type === "author" && payload){
+      authorBackup = modalForm.style.display;
+      modalTitle.textContent = payload.name;
+      modalDesc.textContent = payload.desc;
+      modalForm.style.display = "none";
+    }
+    modal.classList.add("dkm-open");
+  }
+  function closeModal(){
+    modal.classList.remove("dkm-open");
+    if(authorBackup !== null){ modalForm.style.display = authorBackup; authorBackup = null; }
+  }
+  $$("[data-dkm-open]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      openModal(btn.getAttribute("data-dkm-open"));
+    });
+  });
+  $$("[data-dkm-author]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var parts = btn.getAttribute("data-dkm-author").split("|");
+      openModal("author", { name: parts[0], desc: parts[1] });
+    });
+  });
+  $("#dkmModalClose").addEventListener("click", closeModal);
+  modal.addEventListener("click", function(e){
+    if(e.target === modal){ closeModal(); }
+  });
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape" && modal.classList.contains("dkm-open")){ closeModal(); }
+  });
+  modalForm.addEventListener("submit", function(e){
+    e.preventDefault();
+    var name = $("#dkmFormName").value.trim();
+    closeModal();
+    toast(name ? ("已收到，" + name + "，我们会尽快联系") : "已提交，请留意联系方式");
+  });
+
+  /* ---------- 复制链接 ---------- */
+  var copyBtn = $("[data-dkm-copy]");
+  if(copyBtn){
+    copyBtn.addEventListener("click", function(){
+      var link = "https://dailymatch.example/";
+      function fallback(){
+        var ta = document.createElement("textarea");
+        ta.value = link;
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        try{ document.execCommand("copy"); toast("链接已复制"); }
+        catch(err){ toast("复制失败，请手动复制"); }
+        document.body.removeChild(ta);
+      }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(link).then(function(){
+          toast("链接已复制");
+        }).catch(fallback);
+      }else{
+        fallback();
+      }
+    });
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var backTop = $("#dkmBackTop");
+  window.addEventListener("scroll", function(){
+    if(window.scrollY > 620){ backTop.classList.add("dkm-show"); }
+    else{ backTop.classList.remove("dkm-show"); }
+  }, { passive: true });
+  backTop.addEventListener("click", function(){
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  /* ---------- 数字滚动 ---------- */
+  var statEls = $$(".dkm-stat b");
+  var statDone = false;
+  function animateStats(){
+    if(statDone){ return; }
+    statDone = true;
+    statEls.forEach(function(el){
+      var raw = el.textContent.replace(/[^\d.]/g, "");
+      var target = parseFloat(raw);
+      if(isNaN(target)){ return; }
+      var suffix = el.innerHTML.replace(/^[\d.,]+/, "");
+      var start = 0;
+      var duration = 900;
+      var t0 = null;
+      function step(ts){
+        if(!t0){ t0 = ts; }
+        var p = Math.min(1, (ts - t0) / duration);
+        var val = target * (1 - Math.pow(1 - p, 3));
+        var text;
+        if(target >= 100){
+          text = Math.round(val).toLocaleString("en-US");
+        }else{
+          text = val.toFixed(1);
+        }
+        el.innerHTML = text + suffix;
+        if(p < 1){ requestAnimationFrame(step); }
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if("IntersectionObserver" in window){
+    var heroStats = $(".dkm-hero-stats");
+    if(heroStats){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting){ animateStats(); io.disconnect(); }
+        });
+      }, { threshold: 0.3 });
+      io.observe(heroStats);
+    }
+  }else{
+    animateStats();
+  }
+})();
+</script>
+</body>
+                  </html>
